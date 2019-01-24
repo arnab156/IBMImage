@@ -7,15 +7,35 @@ var visualRecognition = new VisualRecognitionV3({
 });
 
 // var url= 'https://watson-developer-cloud.github.io/doc-tutorial-downloads/visual-recognition/640px-IBM_VGA_90X8941_on_PS55.jpg';
+// var url='https://www.uni-regensburg.de/Fakultaeten/phil_Fak_II/Psychologie/Psy_II/beautycheck/english/durchschnittsgesichter/w(01-64)_gr.jpg';
+
+
+// var classifier_ids = ["food"];
+// var url = 'https://watson-developer-cloud.github.io/doc-tutorial-downloads/visual-recognition/fruitbowl.jpg';
+
+// var params = {
+//   url: url,
+// };
+
+// visualRecognition.classify(params, function(err, response) {
+//   if (err) {
+//     console.log(err);
+//   } else {
+//     console.log(JSON.stringify(response, null, 2))
+//   }
+// });
+
+//FaceDetection
+
 var url='https://www.uni-regensburg.de/Fakultaeten/phil_Fak_II/Psychologie/Psy_II/beautycheck/english/durchschnittsgesichter/w(01-64)_gr.jpg';
-var params = {
+//  var url= 'https://watson-developer-cloud.github.io/doc-tutorial-downloads/visual-recognition/Ginni_Rometty_at_the_Fortune_MPW_Summit_in_2011.jpg'
+var params1 = {
   url: url,
 };
 
-visualRecognition.classify(params, function(err, response) {
-  if (err) {
+visualRecognition.detectFaces(params1, function(err, response) {
+  if (err)
     console.log(err);
-  } else {
+  else
     console.log(JSON.stringify(response, null, 2))
-  }
 });

@@ -1,0 +1,24 @@
+{
+  "name": "FacePlus",
+  "version": "1.0.0",
+  "description": "Experimenting with various NASA and Rover API.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arnab156/NASA.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arnab156/NASA/issues"
+  },
+  "homepage": "https://github.com/arnab156/NASA#readme",
+  "dependencies": {
+    "watson-developer-cloud": "^3.16.1"
+  }
+}
